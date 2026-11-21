@@ -1,4 +1,10 @@
-# smartretail-p7-group02
+
+
+
+## Task assignment table
+
+| ID | Task | Function / file | Assignee | Reviewer | Flowchart | PR |
+|---|---|---|---|---|---|---|
 
 ## Assumptions & Limitations
 
@@ -20,3 +26,4 @@
   - When `demand == 0`, Days of Cover (`Cover`) is displayed as `inf` to prevent division by zero.
   - Order quantities are rounded up using `ceil()`; if the computed value is `<= 0` or the replenishment status is `OK`, the order quantity is set to `0`.
 - **Picking Route:** Every picking route starts at `ENTRANCE (0, 0)`. Any product in the pick list that has no shelf assignment in `store_layout.csv` is reported clearly and skipped when calculating total steps.
+
