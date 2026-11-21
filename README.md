@@ -1,3 +1,47 @@
+feature/docs-build-run
+# smartretail-p7-group02
+
+
+## Build and Run Instructions
+
+### 1. Build the program
+
+Compile the program using the following command:
+
+```bash
+g++ -std=c++17 -Wall -Wextra src/main.cpp -o bin/p7
+```
+
+### 2. Run the program with default data
+
+On Linux/macOS:
+
+```bash
+./bin/p7 data/sample
+```
+
+On Windows:
+
+```bash
+bin\p7.exe data\sample
+```
+
+### 3. Run the program with full arguments
+
+```bash
+./bin/p7 data/full S002 P005,P021,P029,P020
+```
+
+### 4. System Parameters
+
+The system uses the following fixed parameters:
+
+| Parameter | Value |
+|---|---:|
+| lead_time | 3 |
+| safety_days | 2 |
+| review_period | 7 |
+
  duongmai31261028864-spec-patch-1
 # SmartRetail P7 - Demand & Replenishment Planner
 
@@ -35,7 +79,6 @@ g++ -std=c++17 -Wall -Wextra src/main.cpp -o bin/p7
 
 
 ## Task assignment table
-
 | ID | Task | Function / file | Assignee | Reviewer | Flowchart | PR |
 |---|---|---|---|---|---|---|
 
@@ -60,4 +103,5 @@ g++ -std=c++17 -Wall -Wextra src/main.cpp -o bin/p7
   - Order quantities are rounded up using `ceil()`; if the computed value is `<= 0` or the replenishment status is `OK`, the order quantity is set to `0`.
 - **Picking Route:** Every picking route starts at `ENTRANCE (0, 0)`. Any product in the pick list that has no shelf assignment in `store_layout.csv` is reported clearly and skipped when calculating total steps.
 
+ main
  main
